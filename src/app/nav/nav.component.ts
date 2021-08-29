@@ -8,15 +8,13 @@ import { ConfigurationService } from '../shared/configuration.service';
 })
 
 export class NavComponent implements OnInit {
-  private _configurationService: ConfigurationService;
-
   locationName: string = "";
 
   constructor(private configurationService: ConfigurationService) {
-    this._configurationService = configurationService;
+    this.configurationService = configurationService;
   }
 
   ngOnInit(): void {
-    this.locationName = this._configurationService.locationName;
+    this.locationName = this.configurationService.locationName;
   }
 }
