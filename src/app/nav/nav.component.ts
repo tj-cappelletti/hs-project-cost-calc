@@ -10,7 +10,6 @@ import { ConfigurationService } from '../shared/configuration.service';
 export class NavComponent implements OnInit {
   private _configurationService: ConfigurationService;
 
-  // TODO: Pull from login context
   locationName: string = "";
 
   constructor(private configurationService: ConfigurationService) {
@@ -20,5 +19,4 @@ export class NavComponent implements OnInit {
   ngOnInit(): void {
     this.locationName = this._configurationService.locationName;
   }
-
 }
