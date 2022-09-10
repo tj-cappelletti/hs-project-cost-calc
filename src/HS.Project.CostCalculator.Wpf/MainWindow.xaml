@@ -5,8 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HS.Project.CostCalculator.Wpf"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Hammer &amp; Stain - Product Pricing Calculator" Height="1024" Width="768">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="44" />
+            <RowDefinition Height="66" />
+            <RowDefinition Height="42" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
 
+        <Rectangle Grid.Row="0" Fill="#32d9cc" />
+        <Viewbox Grid.Row="0" Stretch="Uniform" Margin="2">
+            <ContentControl Content="Product Pricing Calculator"
+                            FontFamily="./Resources/Fonts/#Ubuntu Medium"
+                            Foreground="White" />
+        </Viewbox>
+        
+        <Image Grid.Row="1" Source="Resources/Images/HS-Logo.png" />
+
+        <StackPanel Grid.Row="2" 
+                    HorizontalAlignment="Center"
+                    Orientation="Horizontal"
+                    VerticalAlignment="Bottom">
+            <RadioButton Content="Materials" FontSize="26" Style="{StaticResource MenuButtonStyle}" />
+            <RadioButton Content="Projects" FontSize="26" Style="{StaticResource MenuButtonStyle}" />
+            <RadioButton Content="Reporting" FontSize="26" Style="{StaticResource MenuButtonStyle}" />
+            <RadioButton Content="Settings" FontSize="26" Style="{StaticResource MenuButtonStyle}" />
+        </StackPanel>
     </Grid>
 </Window>
