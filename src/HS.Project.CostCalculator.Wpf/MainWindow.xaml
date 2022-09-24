@@ -32,5 +32,6 @@
             <RadioButton Content="Reporting" FontSize="26" Style="{StaticResource MenuButtonStyle}" />
             <RadioButton Content="Settings" FontSize="26" Style="{StaticResource MenuButtonStyle}" />
         </StackPanel>
+
     </Grid>
 </Window>

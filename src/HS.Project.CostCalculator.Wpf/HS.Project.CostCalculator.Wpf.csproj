@@ -4,12 +4,13 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
+    <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="ViewModels\" />
     <Folder Include="Properties\" />
     <Folder Include="Resources\Images\" />
-    <Folder Include="Services\" />
   </ItemGroup>
 
   <ItemGroup>
